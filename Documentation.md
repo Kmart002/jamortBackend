@@ -184,6 +184,6 @@ To begin using the Person API, follow these steps:
   This documentation assumes that the developer is well acquainted with MongoDB/Mongoose, NodeJs and Express
 
 ## CONCLUSION
-The Person API simplifies the process of managing person records within your application.
+The User API simplifies the process of managing a users record within your application.
 Whether you're building a personal information management system, a contact list, or any other application that requires person-related data, 
 the Person API can help you get started quickly.
