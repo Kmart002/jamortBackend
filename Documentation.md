@@ -33,7 +33,7 @@ Before you start using the Person API, ensure you have the following:
 ## GETTING STARTED
 To begin using the Person API, follow these steps:
 
-1. Clone the GitHub repository: git clone https://github.com/Kmart002/hng-track2
+1. Clone the GitHub repository: git clone https://github.com/Kmart002/jamortBackend
 2. cd into hng-track2 folder if you used a command line to clone.
 3. Install project dependencies using npm install.
 4. Navigate to the server.js file.
