@@ -7,21 +7,21 @@
 
 ## API FEATURES
 The Person API offers the following features:
-  Create a Person:
+  Create a User:
   
-          Create a new person record with a name.
+          Create a new user record with a name.
 
-Retrieve Persons:
+Retrieve Users Information:
 
-          Retrieve the record of the person stored in the database using their unique ID.
+          Retrieve the record of the user stored in the database using their unique ID.
 
-Update Person Information:
+Update a users Information:
 
-          Update a person's record by providing their unique ID.
+          Update a user's record by providing their unique ID.
 
-Delete Person:
+Delete a user:
 
-        Delete a person's record by specifying their unique ID.
+        Delete a user's record by specifying their unique ID.
 
 ## PREREQUISITES
 Before you start using the Person API, ensure you have the following:
@@ -65,55 +65,117 @@ To begin using the Person API, follow these steps:
 ## API ENDPOINTS
 ### Create a Person
 
-HTTP Method: POST
-Endpoint: https://hng-track2.onrender.com/api
-Description: Create a new person with a name property.
-Request Body:
-      {
-        "name": "Patrick Collins"
-        }
-Response:
-    Status Code: 201
-    Body: 
-              {
-                    "name":"Patrick Collins",
-                  "_id":"650439c88399fe65e3da7c0a"
-              }
+    HTTP Method: POST
+    Endpoint: https://jamort-backend.onrender.com
+    Description: Create a new person with a name property.
+    Request Body:
+
+
+          {
+         "firstName": "Timi",
+         "lastName": "Topsy",
+         "userName": "james123",
+         "email": "password@gmail.com",
+         "phone": "12345531234",
+         "techSchoolAttended": "anwa kdendj",
+         "skillSet": "frontend",
+         "internshipPackage": "Backend Development",
+         "reasonToGetOnboarded": "i am good",
+         "file": "jdnjedniefuneu"  
+     }
+
+     
+   Response:
+   
+      Status Code: 201
+      Body: 
+       {
+      "firstName": "Timi",
+      "lastName": "Topsy",
+      "userName": "james123",
+      "email": "password@gmail.com",
+      "phone": "12345531234",
+      "techSchoolAttended": "anwa kdendj",
+      "skillSet": "frontend",
+      "file": "jdnjedniefuneu",
+      "internshipPackage": "Backend Development",
+      "reasonToGetOnboarded": "i am good",
+      "_id": "6509b8f42373f9f3aae6eca2",
+      "__v": 0
+      }
+      
  ### Retrieve Person
  
- HTTP Method: GET
-  Endpoint: https://hng-track2.onrender.com/api/:userId
-  Description: Retrieve the record of person stored in the database.
-Response:
-Status Code: 201
-Body: 
-    Patrick Collins
+    HTTP Method: GET
+     Endpoint: https://jamort-backend.onrender.com/users/:userId
+     Description: Retrieve the record of person stored in the database.
+     
+      Response:
+      Status Code: 201
+      Body: 
+          {
+          "_id": "6509b8f42373f9f3aae6eca2",
+          "firstName": "Timi",
+          "lastName": "Topsy",
+          "userName": "james123",
+          "email": "password@gmail.com",
+          "phone": "12345531234",
+          "techSchoolAttended": "anwa kdendj",
+          "skillSet": "frontend",
+          "file": "jdnjedniefuneu",
+          "internshipPackage": "Backend Development",
+          "reasonToGetOnboarded": "i am good",
+          "__v": 0
+      }
     
 ### Update Person Information
-
-HTTP Method: PUT
-Endpoint:  https://hng-track2.onrender.com/api/:userId
-Description: Update a person's name by providing their unique ID.
-Request Body:
-        {
-            "newname": "Tope Alabi"
-        }
-Response:
-        {
-          "_id": "650438ec8399fe65e3da7c07",
-          "name": "Tope Alabi"
-          }
-## Delete Person
-
-HTTP Method: DELETE
-Endpoint: https://hng-track2.onrender.com/api/:userId
-Description: Delete a person's record by specifying their unique ID.
-Response:
-Status Code: 201
-Body: 
-    {
-      "message": "Deleted Successfully"
-      }
+       
+       HTTP Method: PUT
+       Endpoint:  https://jamort-backend.onrender.com/users/:userId
+       Description: Update a person's name by providing their unique ID.
+       Request Body:
+       {
+           "firstName": "Walter",  // new first name
+           "lastName": "John",     // new last name
+           "userName": "james123",
+           "email": "password@gmail.com",
+           "phone": "12345531234",
+           "techSchoolAttended": "anwa kdendj",
+           "skillSet": "frontend",
+           "internshipPackage": "Backend Development",
+           "reasonToGetOnboarded": "i am good",
+           "file": "jdnjedniefuneu"
+           
+       }
+       
+       Response:
+       
+         {
+           "_id": "6509b8f42373f9f3aae6eca2",
+           "firstName": "Walter",  
+           "lastName": "John",    
+           "userName": "james123",
+           "email": "password@gmail.com",
+           "phone": "12345531234",
+           "techSchoolAttended": "anwa kdendj",
+           "skillSet": "frontend",
+           "file": "jdnjedniefuneu",
+           "internshipPackage": "Backend Development",
+           "reasonToGetOnboarded": "i am good",
+           "__v": 0
+       }
+       
+   ## Delete Person
+       
+       HTTP Method: DELETE
+       Endpoint: https://jamort-backend.onrender.com/users/:userId
+       Description: Delete a person's record by specifying their unique ID.
+       Response:
+       Status Code: 201
+       Body: 
+           {
+             "message": "Deleted Successfully"
+             }
 
 ## KNOWN LIMITATIONS AND ASSUMPTIONS
   This API uses mongoDB atlas for demonstration purposes.
