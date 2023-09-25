@@ -1,12 +1,12 @@
-# PERSON API DOCUMENTATION
+# USER API DOCUMENTATION
 
 ## INTRODUCTION
 
- This PERSON API provides endpoints for creating, retrieving, updating, and deleting person records. 
+ This API provides endpoints for creating, retrieving, updating, and deleting user records. 
  It is designed to be user-friendly and can be integrated into various applications that require basic person management functionality.
 
 ## API FEATURES
-The Person API offers the following features:
+The User API offers the following features:
   Create a User:
   
           Create a new user record with a name.
@@ -24,14 +24,14 @@ Delete a user:
         Delete a user's record by specifying their unique ID.
 
 ## PREREQUISITES
-Before you start using the Person API, ensure you have the following:
+Before you start using the User API, ensure you have the following:
 
   Node.js and npm installed on your system.
   MongoDB installed and running (if you are using MongoDB as your database).
   Basic knowledge of RESTful API concepts.
 
 ## GETTING STARTED
-To begin using the Person API, follow these steps:
+To begin using the User API, follow these steps:
 
 1. Clone the GitHub repository: git clone https://github.com/Kmart002/jamortBackend
 2. cd into hng-track2 folder if you used a command line to clone.
@@ -63,7 +63,7 @@ To begin using the Person API, follow these steps:
 6. Start the server using: npm server.js
 
 ## API ENDPOINTS
-### Create a Person
+### Create a User
 
     HTTP Method: POST
     Endpoint: https://jamort-backend.onrender.com
@@ -104,7 +104,7 @@ To begin using the Person API, follow these steps:
       "__v": 0
       }
       
- ### Retrieve Person
+ ### Retrieve a User
  
     HTTP Method: GET
      Endpoint: https://jamort-backend.onrender.com/users/:userId
@@ -128,7 +128,7 @@ To begin using the Person API, follow these steps:
           "__v": 0
       }
     
-### Update Person Information
+### Update User Information
        
        HTTP Method: PUT
        Endpoint:  https://jamort-backend.onrender.com/users/:userId
@@ -165,7 +165,7 @@ To begin using the Person API, follow these steps:
            "__v": 0
        }
        
-   ## Delete Person
+   ## Delete User
        
        HTTP Method: DELETE
        Endpoint: https://jamort-backend.onrender.com/users/:userId
@@ -186,4 +186,4 @@ To begin using the Person API, follow these steps:
 ## CONCLUSION
 The User API simplifies the process of managing a users record within your application.
 Whether you're building a personal information management system, a contact list, or any other application that requires person-related data, 
-the Person API can help you get started quickly.
+the User API can help you get started quickly.
